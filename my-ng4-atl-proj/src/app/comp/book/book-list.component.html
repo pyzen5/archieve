@@ -1,0 +1,17 @@
+<h2>Books List</h2>
+<input type="text" [(ngModel)]="isbnId"/>
+<button (click)="searchId()">Click</button>
+<div class="row">
+    <div *ngFor="let book of books; let idx = index">
+        <div class="clearfix" *ngIf="idx % 6 === 0"></div>
+        <div class="col-xs-6 col-md-2">
+            <a href="#" class="thumbnail">
+              <img [src]="book.thumbnail" alt="aurangzeb" width="175" height="265">
+                <div class="caption">
+                <h3>{{book.title}}</h3>
+                <p>{{book.description}}</p>
+              </div>
+            </a>
+        </div>
+    </div>
+</div>

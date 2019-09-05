@@ -1,0 +1,20 @@
+Highlevel:
+---------------------------------
+User
+ - home :display fav genres, search, filter
+ - profile: genres, picture, social ids, name, friends, Like & rate books, Review & recommend books to friends
+ - issue the book: limit, notify location
+ - display issued books: renew, return: review, rate, notify location
+
+Admin
+ - add
+ - edit
+ - delete
+ - view
+ - user config
+ - site config
+
+----------------------------------
+Book details
+
+genre / category, Author, Title, Thumbnail image, ISBN, Description, social rating through goodreads or google or any other sources

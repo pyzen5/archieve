@@ -1,0 +1,49 @@
+<h2>Add new Book</h2>
+<form [formGroup]="bookForm" novalidate>
+  <div class="form-group">
+    <label class="center-block">Title:
+      <input class="form-control" formControlName="title">
+    </label>
+  </div>
+  <div class="form-group">
+    <label class="center-block">Genre:
+      <input class="form-control" formControlName="genre">
+    </label>
+  </div>
+  <div class="form-group">
+    <label class="center-block">Author:
+      <input class="form-control" formControlName="author">
+    </label>
+  </div>
+  <div class="form-group">
+    <label class="center-block">ISBN:
+      <input class="form-control" formControlName="isbn">
+    </label>
+  </div>
+  <div class="form-group">
+    <label class="center-block">Description:
+      <input class="form-control" formControlName="description">
+    </label>
+  </div>
+  <div class="form-group">
+    <label class="center-block">Quantity:
+      <input class="form-control" formControlName="quantity">
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label>Upload Image</label>
+    <div class="input-group">
+        <span class="input-group-btn">
+            <span class="btn btn-default btn-file">
+                Browse… <input type="file" (change)="fileChange($event)" id="imgInp">
+            </span>
+        </span>
+        <input type="text" class="form-control" readonly>
+    </div>
+    <img id='img-upload'/>
+  </div>
+</form>
+
+
+<p>Form value: {{ bookForm.value | json }}</p>
